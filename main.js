@@ -1,14 +1,22 @@
 addEventListener("DOMContentLoaded", (e)=>{
-    let formulario = document.querySelector("#formulario")
-    let pagar =document.querySelector("#pagar")
-    let hora = 5208.33
-    formulario.addEventListener("submit", (e)=>{
+    let numero=document.querySelector(`#numero`)
+    numero.addEventListener(`submit`,(e)=>{
         e.preventDefault();
-        let dato = Object.fromEntries(new FormData(e.target));
-        input1= dato.input1
-        input1=input1*hora
-        pagar.innerHTML=`su dinero es : ${input1}`
-    
+        let dato = Object.fromEntries( new FormData(e.target));
+        num = dato.envio
+        let total=0;
+        for(let i=1; i <= num / 2; i++){
+            if (num%i==0){
+                total=total+i;
+            }
+        }
+        if(total !=0 && total == num){
+            mostrar.innerHTML=`es perfecto `
+        }
+        else{
+            mostrar.innerHTML=`no es perfecto `
+        }     
     })
+
 
 })
