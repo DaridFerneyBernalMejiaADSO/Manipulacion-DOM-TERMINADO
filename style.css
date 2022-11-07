@@ -1,47 +1,37 @@
-.img{
-    margin: 0px auto;
-    display: block;
-}
-#mainDiv{
-    align-items: center;
-}
-.center{
-    margin: 0px auto;
-}
-.primeraFila{
-    background: #fe8737;
-    color: white;
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-input[type="text"]{
-    display: block;
-}
-input[type="submit"]{
-    display: block;
-    margin-top: 10px;
-}
-.cajaTitulos{
-    background: #fe8737;
-    color: white;
-    font-family: Arial, Helvetica, sans-serif;
-}
-table thead tr th{
-    padding: 10px;
-}
-table tbody tr{
-    text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
-}
-table tbody tr:nth-child(2n+1){
-    background: #ffd9ce;
-}
-table tbody tr:nth-child(2n){
-    background: #ffeee7;
+*{
+    background-color: rgb(156, 211, 211);
+    
 }
 h3{
-    margin: 50px;
+    color: blue;
+    border: 2px solid darkblue;
 }
-form{
-    margin: 50px;
+input::placeholder{
+    color: red;
+}
+input{
+
+    border: 4px solid red;
+    
+
+}
+input[name="input1"]{
+    color: blue;
+    
+}
+input[name="env"]{
+    border: 2px solid gray;
+    background: yellow;
+    color: black;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+    
+}
+.s1{
+    width: 100px;
+    height: auto;
+    margin-top: 100px;
+    border: 3px solid rgb(89, 0, 255);
+    color: rgb(65, 29, 29);
+
 }
