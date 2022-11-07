@@ -1,21 +1,20 @@
 addEventListener("DOMContentLoaded", (e)=>{
-    let numero=document.querySelector(`#numero`)
-    numero.addEventListener(`submit`,(e)=>{
+    let formulario=document.querySelector(`#formulario`)
+    formulario.addEventListener(`submit`,(e)=>{
         e.preventDefault();
         let dato = Object.fromEntries( new FormData(e.target));
-        num = dato.envio
-        let total=0;
-        for(let i=1; i <= num / 2; i++){
-            if (num%i==0){
-                total=total+i;
-            }
-        }
-        if(total !=0 && total == num){
-            mostrar.innerHTML=`es perfecto `
-        }
-        else{
-            mostrar.innerHTML=`no es perfecto `
-        }     
+        venta1=Number(dato.venta1)
+        venta2=Number(dato.venta2)
+        venta3=Number(dato.venta3)
+        sueldobase=Number(dato.sueldobase)
+        nombre=dato.nombre
+        comision=(venta1+venta2+venta3)*0.10     
+        mostrar.innerHTML=`el usuario ${nombre} el pago es de : ${sueldobase+comision}`
+
+
+
+
+
     })
 
 
